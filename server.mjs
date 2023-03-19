@@ -7,11 +7,11 @@ app.get('/user',(req,res)=>{
 })
 
 app.post('/user',(req,res)=>{
-    console.log(req.body);
+    console.log(user);
     data.push(req.body);
     res.send("User Created")
 })
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT||3000,()=>{
     console.log("Listening On 3000");
 })
