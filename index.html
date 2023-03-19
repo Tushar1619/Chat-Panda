@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <form  onsubmit="postReq(); return false">
+        <label for="name">Name:</label>
+            <input type="text" name="name" id="fname" placeholder="Your Name">
+        
+        <br>
+        <br>
+        <label for="joke">Your Joke</label>
+            <input type="text" name="joke" id="joke" placeholder="Add your joke here">
+        
+        <input type="submit">
+    </form>
+<br>
+<br>
+<br>
+<br>
+    <button onclick="getUsers()">Get All Jokes</button>
+    <br>
+    <br>
+    <p id="allUsers"></p>
+</body>
+</html>
