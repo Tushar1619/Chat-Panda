@@ -7,9 +7,10 @@ app.get('/user',(req,res)=>{
 })
 
 app.post('/user',(req,res)=>{
-    console.log(user);
+    
     data.push(req.body);
     res.send("User Created")
+    console.log(data);
 })
 
 app.listen(process.env.PORT||3000,()=>{
