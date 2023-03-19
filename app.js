@@ -4,7 +4,7 @@ function postReq(){
     var joke = document.getElementById("joke").value;
     console.log(name);
 
-    axios.post('http://localhost:3000/user', {
+    axios.post('https://vast-pink-monkey-ring.cyclic.app/user', {
     "firstName": name,
     "joke": joke
 })
@@ -17,7 +17,7 @@ function postReq(){
 }
 
 function getUsers(){
-    axios.get('http://localhost:3000/user')
+    axios.get('https://vast-pink-monkey-ring.cyclic.app/user')
     .then(function (response) {
         // handle success
         var darr = response.data;
