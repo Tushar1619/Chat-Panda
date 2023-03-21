@@ -17,10 +17,11 @@ function postReq(){
 }
 
 function getUsers(){
-    axios.get('https://vast-pink-monkey-ring.cyclic.app/user')
+    axios.get('https://vast-pink-monkey-ring.cyclic.app/users')
     .then(function (response) {
         // handle success
         var darr = response.data;
+        console.log(darr);
         document.getElementById("allUsers").innerHTML=null;
         for(var i=0;i<darr.length;i++){
             document.getElementById("allUsers").innerHTML+=darr[i].firstName+" :"+darr[i].joke+"<br>";
